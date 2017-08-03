@@ -25,4 +25,7 @@ As there is only one test in the entire folder the above command will run that t
 * IE11 (ie11)
 * MS Edge (edge)
 
-To use Edge, download the appropriate driver from [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/), then re-run the setup.
+### Edge Caveats
+* Edge 14 (shipped with Windows 10 Anniversary Update) works out of the box.
+* For Edge 13, download the appropriate driver from [here](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) before running the setup
+* For Edge 15, run the setup, then run `./node_modules/.bin/selenium-standalone install --drivers.edge.version=15063`, then run the setup again. This will be made better by fixing issue [#2](https://github.com/MyUNiDAYS/ReViewport/issues/2)
