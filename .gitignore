@@ -1,0 +1,12 @@
+node_modules/
+screenshots/
+reports/
+selenium-debug.log
+baseline/
+.vs/
+bin/
+obj/
+typings/
+typings.json
+*.sln
+*.njsproj

@@ -1,0 +1,81 @@
+{
+	"src_folders": [
+		"tests"
+	],
+	"output_folder": "reports",
+	"custom_commands_path": "custom_commands",
+	"globals_path": "",
+	"selenium": {
+		"start_process": true,
+		"server_path": "??",
+		"log_path": "",
+		"host": "127.0.0.1",
+		"port": 4444,
+		"cli_args": {
+			"webdriver.gecko.driver": "??",
+			"webdriver.chrome.driver": "??",
+			"webdriver.edge.driver": "??",
+			"webdriver.ie.driver": "??",
+			"webdriver.ie.driver.ie.ensureCleanSession": true
+		}
+	},
+	"test_settings": {
+		"default": {
+			"launch_url": "about:blank",
+			"selenium_port": 4444,
+			"selenium_host": "127.0.0.1",
+			"silent": true,
+			"screenshots": {
+				"enabled": false,
+				"path": ""
+			}
+		},
+		"chrome": {
+			"desiredCapabilities": {
+				"browserName": "chrome",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true,
+				"loggingPrefs": {
+					"browser": "ALL"
+				}
+			},
+			"globals": {
+				"env": "chrome"
+			}
+		},
+		"firefox": {
+			"desiredCapabilities": {
+				"browserName": "firefox",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true,
+				"marionette": true
+			},
+			"globals": {
+				"env": "firefox"
+			}
+		},
+		"ie11": {
+			"desiredCapabilities": {
+				"browserName": "internet explorer",
+				"version": "11",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true,
+				"ie.ensureCleanSession": true
+			},
+			"globals": {
+				"env": "ie11"
+			}
+		},
+		"edge": {
+			"desiredCapabilities": {
+				"browserName": "MicrosoftEdge",
+				"javascriptEnabled": true,
+				"acceptSslCerts": true,
+				"ie.ensureCleanSession": true
+			},
+			"globals": {
+				"env": "edge"
+			}
+		}
+	}
+}
